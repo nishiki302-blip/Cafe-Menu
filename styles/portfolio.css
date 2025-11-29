@@ -1,0 +1,81 @@
+body{
+    font-family: Arial,sans-serif;
+    background-color: rosybrown;
+    padding:20px;
+}
+
+p{
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+a{
+    text-decoration:none;
+    color: slateblue;
+}
+
+a:visited{
+    color:slateblue;
+}
+
+a:hover{
+    color:brown;
+}
+
+a:active{
+    color:brown;
+}
+.business-card{
+    max-width: 300px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    padding:20px;
+    margin-top: 80px;
+    text-align: center;
+    border:3px solid black;
+    
+}
+
+.profile-image{
+    max-width: 100%;
+    width:180px;
+    height:180px;
+    border-radius: 90px;
+    margin-bottom: 15px;
+}
+
+hr{
+    margin-top:15px;
+    margin-bottom:15px;
+}
+
+h2{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.box p{
+    display: inline-block;
+}
+
+.name{
+    width: 25%;
+    text-align: left;
+}
+
+.content{
+    width: 75%;
+    text-align: right;
+}
+
+.portfolio-link{
+    text-align: center;
+}
+
+/*FOOTER*/
+
+.social-media a{
+    display:inline-block;
+    width:33%;
+}
