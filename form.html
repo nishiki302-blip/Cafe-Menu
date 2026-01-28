@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parent Teacher Conference Form</title>
+  <link rel="stylesheet" href="./styles/form.css">
+</head>
+
+<body>
+  <div class="info-box">
+    <h1 class="center">Parent Teacher Conference Form</h1>
+    <p class="description center">Please fill out the form below to help schedule your parent-teacher conference.</p>
+    <form action="">
+      <fieldset>
+        <legend>Student Information</legend>
+        <label for="name">Full Name:</label>
+        <input type="text" name="student_name" id="name" placeholder="E.g.; John Doe" required/>
+        <label for="grade">Student Grade:</label>
+        <input type="number" name="student_grade" id="grade" placeholder="E.g.; 4" required/>
+      </fieldset>
+      <fieldset>
+        <legend>Parent/Guardian Information</legend>
+        <label for="parent-name">Parent/Guardian Name:</label>
+        <input type="text" name="parent_name" id="parent-name" placeholder="E.g.; Nancy Doe" required/>
+      </fieldset>
+      <fieldset>
+        <legend>Preferred Contact Method</legend>
+        <label for="email" class="content-method">Email:</label>
+        <input 
+          type="radio" 
+          name="content_method" 
+          value="email" 
+          id="email" 
+          class="content-type-radio" 
+          checked
+        />
+        <label for="phone" class="content-method">Phone:</label>
+        <input
+          type="radio"
+          name="content_method"
+          value="phone"
+          id="phone"
+          class="content-type-radio"
+        />
+      </fieldset>
+      <fieldset>
+        <legend>Additional Notes</legend>
+        <label for="comment">Any specific concerns or topics you'd like to discuss?</label>
+        <textarea id="comment" rows="5"></textarea>
+      </fieldset>
+      <button type="submit" class="submit">Submit Form</button>
+    </form>
+  </div>
+</body>
+
+</html>

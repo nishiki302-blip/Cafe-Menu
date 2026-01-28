@@ -34,7 +34,10 @@ h1{
 
 .item{
     list-style: square inside;
-    line-height: 4;
+}
+
+.item > li{
+    margin:12px 0;
 }
 
 .item-link{

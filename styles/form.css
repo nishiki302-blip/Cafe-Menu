@@ -1,0 +1,95 @@
+body{
+  background-color: midnightblue;
+  color: whitesmoke;
+}
+
+.info-box{
+  width: 90%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #ffffff1a;
+  box-shadow: 0 2px 15px black;
+}
+
+.center{
+  text-align:center;
+}
+
+h1{
+  font-size: 2rem;
+}
+
+.description{
+  font-size: 1.2rem;
+}
+
+fieldset{
+  padding: 20px;
+  border: 1px solid gray;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+
+legend{
+  font-size:1.3rem;
+  font-weight: 600;
+}
+
+label{
+  font-size: 1.2rem;
+}
+
+label:not(.content-method){
+  display: block;
+  margin: 10px 0;
+}
+
+input:not(.content-type-radio) ,textarea{
+  width: 95%;
+  background-color: #ffffff1a;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+input:not(.content-type-radio)::placeholder{
+  color: whitesmoke;
+}
+
+.content-type-radio{
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid gray;
+  vertical-align: bottom;
+}
+
+.content-type-radio::before{
+  display: block;
+  content: " ";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transform: translate(3px ,3px) scale(0);
+  transition:all 0.3s ease-in;
+}
+
+.content-type-radio:checked::before{
+  transform:translate(3px,3px) scale(1);
+  background-color: lightgreen;
+}
+
+.submit{
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: royalblue;
+  margin: auto;
+  color: whitesmoke;
+  display: block;
+  font-size: 1.1rem;
+}
